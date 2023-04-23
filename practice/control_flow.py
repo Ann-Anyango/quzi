@@ -63,4 +63,44 @@ i = 1
 while i <= 10:
     print(i)
     i += 1
+    name=["Mercy","Nancy","Ann","Caro","Nicholas","Akinyi"]
+first,second,third,*rest=name
+print(first)
+print(second)
+print(*rest)
+#sort()
+number=[23,34,56,78,12,90]
+number.sort()
+print(number)
+#
+number.reverse()
+print(number)
+#
+number.sort(reverse=True)
+print(number)
+myWork=[*range(30,40)]
+print (myWork)
+#deletes
+del(number[0])
+print(number)
+#remove
+number.remove(12)
+print(number)
+number2=set
+def year_of_birth(name,age):
+    year =2023-age
+    print(f"Helo{name},you were born in{year}")
+def my_country(country="Kenya"):
+    print(f"Hello you are from{country}")
+def hello(*names):
+    for name in names :
+        print(f"Hello {name}")
+def sum (*nums):
+    answer=0
+    for num in nums:
+     answer+=num
+
+    
+    return answer
+
  
